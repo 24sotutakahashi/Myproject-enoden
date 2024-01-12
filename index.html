@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>移動効率化</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- スタート地点の選択セクション -->
+        <div id="startSection" class="section">
+            <!-- startBuildingButtonsの編集の際は、
+                jsの「//スタート用のボタン要素を取得」
+                    [  // スタート用建物ボタンのイベントリスナー]
+                    に追記・編集することを忘れずに！-->
+            <div id="startBuildingButtons" class="button-container">
+                <div id="startBuildingButton" class="button">1号館（スタート）</div>
+                <div id="startBuilding2Button" class="button">2号館（スタート）</div>
+                <div id="startBuilding3Button" class="button">3号館（スタート）</div>
+                <div id="startBuilding4Button" class="button">4号館（スタート）</div>
+                <div id="startBuilding5Button" class="button">5号館（スタート）</div>
+
+
+            </div>
+            <div id="startFloorButtons" class="button-container">
+                <div class="button floor" data-floor="1">1階</div>
+                <div class="button floor" data-floor="2">2階</div>
+                <div class="button floor" data-floor="3">3階</div>
+                <div class="button floor" data-floor="4">4階</div>
+                <div class="button floor" data-floor="5">5階</div>
+
+                <div class="button floor" data-floor="食堂">食堂</div>
+                <!--号選択へと戻るボタン（あらゆる階の、一番下)-->
+                <div id="startFloorBackButton" class="button">戻る</div>
+            </div>
+            <div id="startRoomButtons" class="button-container">
+                <!-- 1号館の教室 -->
+                <div class="button room" data-floor="1" data-building="1">1号館入り口</div>
+                <div class="button room" data-floor="1" data-building="1">101</div>
+                <div class="button room" data-floor="1" data-building="1">102</div>
+                <div class="button room" data-floor="1" data-building="1">103</div>
+                <div class="button room" data-floor="2" data-building="1">201</div>
+                <div class="button room" data-floor="2" data-building="1">202</div>
+                <div class="button room" data-floor="2" data-building="1">203</div>
+                <div class="button room" data-floor="3" data-building="1">301</div>
+                <div class="button room" data-floor="3" data-building="1">302</div>
+                <div class="button room" data-floor="3" data-building="1">303</div>
+                <!-- 2号館の教室 -->
+                <div class="button room" data-floor="1" data-building="2">2号館入り口</div>
+                <div class="button room" data-floor="1" data-building="2">2101</div>
+                <div class="button room" data-floor="1" data-building="2">2102</div>
+                <div class="button room" data-floor="1" data-building="2">2103</div>
+                <div class="button room" data-floor="2" data-building="2">2201</div>
+                <div class="button room" data-floor="2" data-building="2">2202</div>
+                <div class="button room" data-floor="2" data-building="2">2203</div>
+                <div class="button room" data-floor="3" data-building="2">2301</div>
+                <div class="button room" data-floor="3" data-building="2">2302</div>
+                <div class="button room" data-floor="3" data-building="2">2303</div>
+                <!-- 3号館の教室 -->
+                <div class="button room" data-floor="1" data-building="3">3号館入り口</div>
+                <div class="button room" data-floor="1" data-building="3">3号館入り口2</div>
+                <div class="button room" data-floor="1" data-building="3">3101</div>
+                <div class="button room" data-floor="1" data-building="3">3102</div>
+                <div class="button room" data-floor="1" data-building="3">3103</div>
+                <div class="button room" data-floor="2" data-building="3">3201</div>
+                <div class="button room" data-floor="2" data-building="3">3202</div>
+                <div class="button room" data-floor="2" data-building="3">3203</div>
+                <div class="button room" data-floor="3" data-building="3">3301</div>
+                <div class="button room" data-floor="3" data-building="3">3302</div>
+                <div class="button room" data-floor="3" data-building="3">3303</div>
+                <div class="button room" data-floor="3" data-building="3">3304</div>
+
+
+                <!-- 4号館(その他)の教室 -->
+                <div class="button room" data-floor="食堂" data-building="4">食堂</div>
+
+
+
+
+
+
+
+
+                <!--階選択へと戻るボタン（あらゆる教室の、一番下)-->
+                <div id="startBackButton" class="button">戻る</div>
+            </div>
+
+        </div>
+        <!-- ゴール地点の選択セクション -->
+        <div id="goalSection" class="section">
+            <!--goalBuildingButtonsを編集の際、
+                 jsの「//ゴール用のボタン要素を取得」
+                [  // ゴール用建物ボタンのイベントリスナー]
+                に追記・編集することを忘れずに！-->
+            <div id="goalBuildingButtons" class="button-container">
+                <div id="goalBuildingButton" class="button">1号館（ゴール）</div>
+                <div id="goalBuilding2Button" class="button">2号館（ゴール）</div>
+                <div id="goalBuilding3Button" class="button">3号館（ゴール）</div>
+                <div id="goalBuilding4Button" class="button">4号館（ゴール）</div>
+                <div id="goalBuilding5Button" class="button">5号館（ゴール）</div>
+            </div>
+            <div id="goalFloorButtons" class="button-container">
+                <div class="button floor" data-floor="1">1階</div>
+                <div class="button floor" data-floor="2">2階</div>
+                <div class="button floor" data-floor="3">3階</div>
+                <div class="button floor" data-floor="4">4階</div>
+                <div class="button floor" data-floor="5">5階</div>
+                <!--号選択へと戻るボタン（あらゆる階の、一番下)-->
+                <div id="goalFloorBackButton" class="button">戻る</div>
+            </div>
+            <div id="goalRoomButtons" class="button-container">
+                <!-- 1号館の教室 -->
+                <div class="button room" data-floor="1" data-building="1">入り口</div>
+                <div class="button room" data-floor="1" data-building="1">101</div>
+                <div class="button room" data-floor="1" data-building="1">102</div>
+                <div class="button room" data-floor="1" data-building="1">103</div>
+                <div class="button room" data-floor="2" data-building="1">201</div>
+                <div class="button room" data-floor="2" data-building="1">202</div>
+                <div class="button room" data-floor="2" data-building="1">203</div>
+                <div class="button room" data-floor="3" data-building="1">301</div>
+                <div class="button room" data-floor="3" data-building="1">302</div>
+                <div class="button room" data-floor="3" data-building="1">303</div>
+                <!-- 2号館の教室 -->
+                <div class="button room" data-floor="1" data-building="2">入り口</div>
+                <div class="button room" data-floor="1" data-building="2">2101</div>
+                <div class="button room" data-floor="1" data-building="2">2102</div>
+                <div class="button room" data-floor="1" data-building="2">2103</div>
+                <div class="button room" data-floor="2" data-building="2">2201</div>
+                <div class="button room" data-floor="2" data-building="2">2202</div>
+                <div class="button room" data-floor="2" data-building="2">2203</div>
+                <div class="button room" data-floor="3" data-building="2">2301</div>
+                <div class="button room" data-floor="3" data-building="2">2302</div>
+                <div class="button room" data-floor="3" data-building="2">2303</div>
+                <!-- 3号館の教室 -->
+                <div class="button room" data-floor="1" data-building="3">入り口</div>
+                <div class="button room" data-floor="1" data-building="3">入り口2</div>
+                <div class="button room" data-floor="1" data-building="3">3101</div>
+                <div class="button room" data-floor="1" data-building="3">3102</div>
+                <div class="button room" data-floor="1" data-building="3">3103</div>
+                <div class="button room" data-floor="2" data-building="3">3201</div>
+                <div class="button room" data-floor="2" data-building="3">3202</div>
+                <div class="button room" data-floor="2" data-building="3">3203</div>
+                <div class="button room" data-floor="3" data-building="3">3301</div>
+                <div class="button room" data-floor="3" data-building="3">3302</div>
+                <div class="button room" data-floor="3" data-building="3">3303</div>
+
+
+
+
+
+                <!--階選択へと戻るボタン（あらゆる教室の、一番下)-->
+                <div id="goalBackButton" class="button">戻る</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 結果表示セクション -->
+    <div id="result" class="result"></div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
