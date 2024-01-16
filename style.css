@@ -42,11 +42,12 @@ body {
 }
 
 /* ボタンコンテナのスタイル */
+
 .button-container {
     flex: 0 0 auto;
     /* ボタンのサイズを固定値にする */
     width: 450px;
-    /* ボタンの幅を120pxに設定 */
+    /* ボタンの幅を450pxに設定 */
 
     display: none;
     /* 初期状態では非表示 */
@@ -70,6 +71,7 @@ body {
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 
 
 
@@ -129,5 +131,30 @@ CSSで .sections-container と .section クラスにスタイルを追加し、
 .section {
     /* セクションの幅を指定 */
     margin: 0 20px;
+
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        /* 横から縦に変更 */
+
+    }
+
+    .section {
+        margin: 0;
+        /* マージンをリセット */
+    }
+
+    .button-container {
+        width: 80%;
+        /* ボタンコンテナの幅を100%に */
+
+        margin: 0 auto;
+        /* ボタンコンテナを中央に */
+
+        align-items: center;
+        /* 中央揃え */
+    }
 
 }

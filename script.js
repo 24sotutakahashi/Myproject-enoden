@@ -224,6 +224,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // スタート用教室ボタンのイベントリスナー
+    // event.preventDefault() メソッドが、タッチの時にもこれが有効になるように、解決してくれた
+    startRoomButtons.addEventListener('touchend', function (event) {
+        event.preventDefault(); // デフォルトのタッチイベントの動作をキャンセル
+        if (event.target.classList.contains('room')) {
+            startRoomSelected = event.target.textContent; // 選択された教室を記録
+            updateSelectedButton(event.target, startRooms); // 選択されたボタンのスタイルを更新
+            updateResult(); // 結果表示を更新
+        }
+    });
+
+
 
     // ゴール用の、イベントリスナー
     // ゴール用建物ボタンのイベントリスナー
@@ -328,6 +340,20 @@ document.addEventListener('DOMContentLoaded', function () {
             updateResult(); // 結果表示を更新
         }
     });
+
+    // ゴール用教室ボタンのイベントリスナー
+    // event.preventDefault() メソッドが、タッチの時にもこれが有効になるように、解決してくれた
+    goalRoomButtons.addEventListener('touchend', function (event) {
+        event.preventDefault(); // デフォルトのタッチイベントの動作をキャンセル
+        if (event.target.classList.contains('room')) {
+            goalRoomSelected = event.target.textContent; // 選択された教室を記録
+            updateSelectedButton(event.target, goalRooms); // 選択されたボタンのスタイルを更新
+            updateResult(); // 結果表示を更新
+        }
+    });
+
+
+
 
     // 結果を更新する関数
     function updateResult() {
