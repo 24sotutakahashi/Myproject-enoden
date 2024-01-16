@@ -20,17 +20,40 @@
     <div class="container">
         <!-- スタート地点の選択セクション -->
         <div id="startSection" class="section">
+            <!-- スタート地点のヘッダー -->
+            <div class="button-container-header">
+                <h2>スタート地点をタップ</h2>
+            </div>
+
             <!-- startBuildingButtonsの編集の際は、
                 jsの「//スタート用のボタン要素を取得」
                     [  // スタート用建物ボタンのイベントリスナー]
                     に追記・編集することを忘れずに！-->
-            <div id="startBuildingButtons" class="button-container">
-                <div id="startBuildingButton" class="button">1号館（スタート）</div>
-                <div id="startBuilding2Button" class="button">2号館（スタート）</div>
-                <div id="startBuilding3Button" class="button">3号館（スタート）</div>
-                <div id="startBuilding4Button" class="button">4号館（スタート）</div>
-                <div id="startBuilding5Button" class="button">5号館（スタート）</div>
 
+            <div id="startBuildingButtons" class="button-container">
+
+
+
+                <div id="startBuildingButton" class="button">1号館</div>
+                <div id="startBuilding2Button" class="button">2号館</div>
+                <div id="startBuilding3Button" class="button">3号館</div>
+                <div id="startBuilding4Button" class="button">4号館</div>
+                <div id="startBuilding5Button" class="button">5号館</div>
+                <div id="startBuilding6Button" class="button">6号館</div>
+                <div id="startBuilding7Button" class="button">7号館</div>
+                <div id="startBuilding8Button" class="button">8号館</div>
+                <div id="startBuilding9Button" class="button">9号館</div>
+                <div id="startBuilding10Button" class="button">10号館</div>
+                <div id="startBuilding11Button" class="button">11号館</div>
+                <div id="startBuilding12Button" class="button">12号館</div>
+                <div id="startBuilding13Button" class="button">13号館</div>
+                <div id="startBuilding14Button" class="button">14号館</div>
+                <div id="startBuilding15Button" class="button">15号館</div>
+                <div id="startBuilding16Button" class="button">16号館</div>
+                <div id="startBuilding17Button" class="button">17号館</div>
+                <div id="startBuilding18Button" class="button">18号館</div>
+                <div id="startBuilding19Button" class="button">19号館</div>
+                <div id="startBuilding20Button" class="button">20号館</div>
 
             </div>
             <div id="startFloorButtons" class="button-container">
@@ -45,48 +68,186 @@
                 <div id="startFloorBackButton" class="button">戻る</div>
             </div>
             <div id="startRoomButtons" class="button-container">
+
+                <!-- ここから、GASのHTMLコピペ -->
                 <!-- 1号館の教室 -->
-                <div class="button room" data-floor="1" data-building="1">1号館入り口</div>
-                <div class="button room" data-floor="1" data-building="1">101</div>
-                <div class="button room" data-floor="1" data-building="1">102</div>
-                <div class="button room" data-floor="1" data-building="1">103</div>
-                <div class="button room" data-floor="2" data-building="1">201</div>
-                <div class="button room" data-floor="2" data-building="1">202</div>
-                <div class="button room" data-floor="2" data-building="1">203</div>
-                <div class="button room" data-floor="3" data-building="1">301</div>
-                <div class="button room" data-floor="3" data-building="1">302</div>
-                <div class="button room" data-floor="3" data-building="1">303</div>
-                <!-- 2号館の教室 -->
-                <div class="button room" data-floor="1" data-building="2">2号館入り口</div>
-                <div class="button room" data-floor="1" data-building="2">2101</div>
-                <div class="button room" data-floor="1" data-building="2">2102</div>
-                <div class="button room" data-floor="1" data-building="2">2103</div>
-                <div class="button room" data-floor="2" data-building="2">2201</div>
-                <div class="button room" data-floor="2" data-building="2">2202</div>
-                <div class="button room" data-floor="2" data-building="2">2203</div>
-                <div class="button room" data-floor="3" data-building="2">2301</div>
-                <div class="button room" data-floor="3" data-building="2">2302</div>
-                <div class="button room" data-floor="3" data-building="2">2303</div>
-                <!-- 3号館の教室 -->
-                <div class="button room" data-floor="1" data-building="3">3号館入り口</div>
-                <div class="button room" data-floor="1" data-building="3">3号館入り口2</div>
-                <div class="button room" data-floor="1" data-building="3">3101</div>
-                <div class="button room" data-floor="1" data-building="3">3102</div>
-                <div class="button room" data-floor="1" data-building="3">3103</div>
-                <div class="button room" data-floor="2" data-building="3">3201</div>
-                <div class="button room" data-floor="2" data-building="3">3202</div>
-                <div class="button room" data-floor="2" data-building="3">3203</div>
-                <div class="button room" data-floor="3" data-building="3">3301</div>
-                <div class="button room" data-floor="3" data-building="3">3302</div>
-                <div class="button room" data-floor="3" data-building="3">3303</div>
-                <div class="button room" data-floor="3" data-building="3">3304</div>
+                <div class="button room" data-floor="3" data-building="1">135</div>
+                <div class="button room" data-floor="3" data-building="1">136</div>
+                <div class="button room" data-floor="3" data-building="1">137</div>
+                <div class="button room" data-floor="3" data-building="1">138</div>
+                <div class="button room" data-floor="3" data-building="1">139</div>
+                <div class="button room" data-floor="1" data-building="1">1号館1階</div>
+                <div class="button room" data-floor="2" data-building="1">1号館2階</div>
+                <div class="button room" data-floor="3" data-building="1">1号館3階</div>
+                <div class="button room" data-floor="2" data-building="2">220</div>
+                <div class="button room" data-floor="2" data-building="2">226</div>
+                <div class="button room" data-floor="3" data-building="2">230</div>
+                <div class="button room" data-floor="4" data-building="2">240</div>
+                <div class="button room" data-floor="1" data-building="2">2号館1階</div>
+                <div class="button room" data-floor="2" data-building="2">2号館2階</div>
+                <div class="button room" data-floor="3" data-building="2">2号館3階</div>
+                <div class="button room" data-floor="4" data-building="2">2号館4階</div>
+                <div class="button room" data-floor="1" data-building="3">310</div>
+                <div class="button room" data-floor="1" data-building="3">311</div>
+                <div class="button room" data-floor="2" data-building="3">320</div>
+                <div class="button room" data-floor="2" data-building="3">321</div>
+                <div class="button room" data-floor="3" data-building="3">330</div>
+                <div class="button room" data-floor="1" data-building="3">3号館1階</div>
+                <div class="button room" data-floor="2" data-building="3">3号館2階</div>
+                <div class="button room" data-floor="3" data-building="3">3号館3階</div>
+                <div class="button room" data-floor="2" data-building="4">420</div>
+                <div class="button room" data-floor="2" data-building="4">421</div>
+                <div class="button room" data-floor="2" data-building="4">422</div>
+                <div class="button room" data-floor="2" data-building="4">423</div>
+                <div class="button room" data-floor="2" data-building="4">424</div>
+                <div class="button room" data-floor="3" data-building="4">430</div>
+                <div class="button room" data-floor="3" data-building="4">431</div>
+                <div class="button room" data-floor="3" data-building="4">432</div>
+                <div class="button room" data-floor="3" data-building="4">433</div>
+                <div class="button room" data-floor="3" data-building="4">434</div>
+                <div class="button room" data-floor="4" data-building="4">440</div>
+                <div class="button room" data-floor="4" data-building="4">441</div>
+                <div class="button room" data-floor="4" data-building="4">442</div>
+                <div class="button room" data-floor="4" data-building="4">443</div>
+                <div class="button room" data-floor="4" data-building="4">444</div>
+                <div class="button room" data-floor="1" data-building="4">4号館1階</div>
+                <div class="button room" data-floor="2" data-building="4">4号館2階</div>
+                <div class="button room" data-floor="3" data-building="4">4号館3階</div>
+                <div class="button room" data-floor="4" data-building="4">4号館4階</div>
+                <div class="button room" data-floor="1" data-building="5">511</div>
+                <div class="button room" data-floor="1" data-building="5">512</div>
+                <div class="button room" data-floor="1" data-building="5">513</div>
+                <div class="button room" data-floor="1" data-building="5">514</div>
+                <div class="button room" data-floor="2" data-building="5">520</div>
+                <div class="button room" data-floor="2" data-building="5">521</div>
+                <div class="button room" data-floor="2" data-building="5">522</div>
+                <div class="button room" data-floor="2" data-building="5">523</div>
+                <div class="button room" data-floor="2" data-building="5">524</div>
+                <div class="button room" data-floor="3" data-building="5">530</div>
+                <div class="button room" data-floor="3" data-building="5">531</div>
+                <div class="button room" data-floor="3" data-building="5">532</div>
+                <div class="button room" data-floor="3" data-building="5">533</div>
+                <div class="button room" data-floor="3" data-building="5">534</div>
+                <div class="button room" data-floor="3" data-building="5">535</div>
+                <div class="button room" data-floor="3" data-building="5">536</div>
+                <div class="button room" data-floor="4" data-building="5">541</div>
+                <div class="button room" data-floor="4" data-building="5">542</div>
+                <div class="button room" data-floor="4" data-building="5">543</div>
+                <div class="button room" data-floor="4" data-building="5">544</div>
+                <div class="button room" data-floor="4" data-building="5">545</div>
+                <div class="button room" data-floor="4" data-building="5">546</div>
+                <div class="button room" data-floor="1" data-building="5">5号館1階</div>
+                <div class="button room" data-floor="2" data-building="5">5号館2階</div>
+                <div class="button room" data-floor="3" data-building="5">5号館3階</div>
+                <div class="button room" data-floor="4" data-building="5">5号館4階</div>
+                <div class="button room" data-floor="1" data-building="6">610</div>
+                <div class="button room" data-floor="1" data-building="6">611</div>
+                <div class="button room" data-floor="1" data-building="6">612</div>
+                <div class="button room" data-floor="1" data-building="6">613</div>
+                <div class="button room" data-floor="2" data-building="6">620</div>
+                <div class="button room" data-floor="2" data-building="6">621</div>
+                <div class="button room" data-floor="3" data-building="6">630</div>
+                <div class="button room" data-floor="3" data-building="6">631</div>
+                <div class="button room" data-floor="3" data-building="6">632</div>
+                <div class="button room" data-floor="3" data-building="6">633</div>
+                <div class="button room" data-floor="3" data-building="6">634</div>
+                <div class="button room" data-floor="3" data-building="6">635</div>
+                <div class="button room" data-floor="3" data-building="6">636</div>
+                <div class="button room" data-floor="4" data-building="6">640</div>
+                <div class="button room" data-floor="4" data-building="6">641</div>
+                <div class="button room" data-floor="4" data-building="6">642</div>
+                <div class="button room" data-floor="4" data-building="6">643</div>
+                <div class="button room" data-floor="4" data-building="6">644</div>
+                <div class="button room" data-floor="4" data-building="6">645</div>
+                <div class="button room" data-floor="4" data-building="6">646</div>
+                <div class="button room" data-floor="5" data-building="6">650</div>
+                <div class="button room" data-floor="5" data-building="6">651</div>
+                <div class="button room" data-floor="5" data-building="6">652</div>
+                <div class="button room" data-floor="5" data-building="6">653</div>
+                <div class="button room" data-floor="5" data-building="6">654</div>
+                <div class="button room" data-floor="5" data-building="6">655</div>
+                <div class="button room" data-floor="5" data-building="6">656</div>
+                <div class="button room" data-floor="5" data-building="6">657</div>
+                <div class="button room" data-floor="5" data-building="6">658</div>
+                <div class="button room" data-floor="5" data-building="6">659</div>
+                <div class="button room" data-floor="6" data-building="6">660</div>
+                <div class="button room" data-floor="1" data-building="6">6号館1階</div>
+                <div class="button room" data-floor="2" data-building="6">6号館2階</div>
+                <div class="button room" data-floor="3" data-building="6">6号館3階</div>
+                <div class="button room" data-floor="4" data-building="6">6号館4階</div>
+                <div class="button room" data-floor="5" data-building="6">6号館5階</div>
+                <div class="button room" data-floor="6" data-building="6">6号館6階</div>
+                <div class="button room" data-floor="1" data-building="7">711</div>
+                <div class="button room" data-floor="1" data-building="7">712</div>
+                <div class="button room" data-floor="2" data-building="7">720</div>
+                <div class="button room" data-floor="1" data-building="7">7号館1階</div>
+                <div class="button room" data-floor="2" data-building="7">7号館2階</div>
+                <div class="button room" data-floor="2" data-building="8">8-2F会議室</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F演習C</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F講義1</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F講義2</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F地域研</div>
+                <div class="button room" data-floor="4" data-building="8">8-4Fﾗｳﾝｼﾞ</div>
+                <div class="button room" data-floor="5" data-building="8">8-5Fﾗｳﾝｼﾞ</div>
+                <div class="button room" data-floor="5" data-building="8">8-5F指導1</div>
+                <div class="button room" data-floor="2" data-building="8">821</div>
+                <div class="button room" data-floor="2" data-building="8">822</div>
+                <div class="button room" data-floor="2" data-building="8">823</div>
+                <div class="button room" data-floor="2" data-building="8">824</div>
+                <div class="button room" data-floor="2" data-building="8">825</div>
+                <div class="button room" data-floor="3" data-building="8">831</div>
+                <div class="button room" data-floor="4" data-building="8">841</div>
+                <div class="button room" data-floor="4" data-building="8">842</div>
+                <div class="button room" data-floor="5" data-building="8">851</div>
+                <div class="button room" data-floor="1" data-building="8">8号館1階</div>
+                <div class="button room" data-floor="2" data-building="8">8号館2階</div>
+                <div class="button room" data-floor="3" data-building="8">8号館3階</div>
+                <div class="button room" data-floor="4" data-building="8">8号館4階</div>
+                <div class="button room" data-floor="5" data-building="8">8号館5階</div>
+                <div class="button room" data-floor="1" data-building="9">911</div>
+                <div class="button room" data-floor="1" data-building="9">912</div>
+                <div class="button room" data-floor="2" data-building="9">921</div>
+                <div class="button room" data-floor="2" data-building="9">922</div>
+                <div class="button room" data-floor="3" data-building="9">930</div>
+                <div class="button room" data-floor="1" data-building="9">9号館1階</div>
+                <div class="button room" data-floor="2" data-building="9">9号館2階</div>
+                <div class="button room" data-floor="3" data-building="9">9号館3階</div>
+                <div class="button room" data-floor="2" data-building="10">1021</div>
+                <div class="button room" data-floor="2" data-building="10">1022</div>
+                <div class="button room" data-floor="3" data-building="10">1031</div>
+                <div class="button room" data-floor="3" data-building="10">1032</div>
+                <div class="button room" data-floor="4" data-building="10">1040</div>
+                <div class="button room" data-floor="4" data-building="10">1041</div>
+                <div class="button room" data-floor="4" data-building="10">1042</div>
+                <div class="button room" data-floor="5" data-building="10">1050</div>
+                <div class="button room" data-floor="5" data-building="10">1051</div>
+                <div class="button room" data-floor="5" data-building="10">1052</div>
+                <div class="button room" data-floor="1" data-building="10">10号館1階</div>
+                <div class="button room" data-floor="2" data-building="10">10号館2階</div>
+                <div class="button room" data-floor="3" data-building="10">10号館3階</div>
+                <div class="button room" data-floor="4" data-building="10">10号館4階</div>
+                <div class="button room" data-floor="5" data-building="10">10号館5階</div>
+                <div class="button room" data-floor="1" data-building="11">11号館1階</div>
+                <div class="button room" data-floor="1" data-building="12">12号館1階</div>
+                <div class="button room" data-floor="1" data-building="13">13号館1階</div>
+                <div class="button room" data-floor="1" data-building="14">14号館1階</div>
+                <div class="button room" data-floor="1" data-building="15">15号館1階</div>
+                <div class="button room" data-floor="1" data-building="16">16号館1階</div>
+                <div class="button room" data-floor="1" data-building="17">17号館1階</div>
 
 
-                <!-- 4号館(その他)の教室 -->
+                <div class="button room" data-floor="1" data-building="18">体育館1F</div>
+                <div class="button room" data-floor="2" data-building="18">体育館2F</div>
+                <div class="button room" data-floor="3" data-building="18">体育館3F</div>
+                <div class="button room" data-floor="1" data-building="19">19号館1階</div>
+
+                <div class="button room" data-floor="1" data-building="20">チャペル</div>
+
+
+                <!-- (その他)の教室 -->
                 <div class="button room" data-floor="食堂" data-building="4">食堂</div>
 
-
-
+                <!-- ここまで、GASのHTMLコピペ -->
 
 
 
@@ -99,16 +260,37 @@
         </div>
         <!-- ゴール地点の選択セクション -->
         <div id="goalSection" class="section">
+            <!-- ゴール地点のヘッダー -->
+            <div class="button-container-header">
+                <h2>ゴール地点をタップ</h2>
+            </div>
+
             <!--goalBuildingButtonsを編集の際、
                  jsの「//ゴール用のボタン要素を取得」
                 [  // ゴール用建物ボタンのイベントリスナー]
                 に追記・編集することを忘れずに！-->
             <div id="goalBuildingButtons" class="button-container">
-                <div id="goalBuildingButton" class="button">1号館（ゴール）</div>
-                <div id="goalBuilding2Button" class="button">2号館（ゴール）</div>
-                <div id="goalBuilding3Button" class="button">3号館（ゴール）</div>
-                <div id="goalBuilding4Button" class="button">4号館（ゴール）</div>
-                <div id="goalBuilding5Button" class="button">5号館（ゴール）</div>
+                <div id="goalBuildingButton" class="button">1号館</div>
+                <div id="goalBuilding2Button" class="button">2号館</div>
+                <div id="goalBuilding3Button" class="button">3号館</div>
+                <div id="goalBuilding4Button" class="button">4号館</div>
+                <div id="goalBuilding5Button" class="button">5号館</div>
+                <div id="goalBuilding6Button" class="button">6号館</div>
+                <div id="goalBuilding7Button" class="button">7号館</div>
+                <div id="goalBuilding8Button" class="button">8号館</div>
+                <div id="goalBuilding9Button" class="button">9号館</div>
+                <div id="goalBuilding10Button" class="button">10号館</div>
+                <div id="goalBuilding11Button" class="button">11号館</div>
+                <div id="goalBuilding12Button" class="button">12号館</div>
+                <div id="goalBuilding13Button" class="button">13号館</div>
+                <div id="goalBuilding14Button" class="button">14号館</div>
+                <div id="goalBuilding15Button" class="button">15号館</div>
+                <div id="goalBuilding16Button" class="button">16号館</div>
+                <div id="goalBuilding17Button" class="button">17号館</div>
+                <div id="goalBuilding18Button" class="button">18号館</div>
+                <div id="goalBuilding19Button" class="button">19号館</div>
+                <div id="goalBuilding20Button" class="button">20号館</div>
+
             </div>
             <div id="goalFloorButtons" class="button-container">
                 <div class="button floor" data-floor="1">1階</div>
@@ -120,42 +302,184 @@
                 <div id="goalFloorBackButton" class="button">戻る</div>
             </div>
             <div id="goalRoomButtons" class="button-container">
+
+                <!-- ここから、GASのHTMLコピペ -->
                 <!-- 1号館の教室 -->
-                <div class="button room" data-floor="1" data-building="1">入り口</div>
-                <div class="button room" data-floor="1" data-building="1">101</div>
-                <div class="button room" data-floor="1" data-building="1">102</div>
-                <div class="button room" data-floor="1" data-building="1">103</div>
-                <div class="button room" data-floor="2" data-building="1">201</div>
-                <div class="button room" data-floor="2" data-building="1">202</div>
-                <div class="button room" data-floor="2" data-building="1">203</div>
-                <div class="button room" data-floor="3" data-building="1">301</div>
-                <div class="button room" data-floor="3" data-building="1">302</div>
-                <div class="button room" data-floor="3" data-building="1">303</div>
-                <!-- 2号館の教室 -->
-                <div class="button room" data-floor="1" data-building="2">入り口</div>
-                <div class="button room" data-floor="1" data-building="2">2101</div>
-                <div class="button room" data-floor="1" data-building="2">2102</div>
-                <div class="button room" data-floor="1" data-building="2">2103</div>
-                <div class="button room" data-floor="2" data-building="2">2201</div>
-                <div class="button room" data-floor="2" data-building="2">2202</div>
-                <div class="button room" data-floor="2" data-building="2">2203</div>
-                <div class="button room" data-floor="3" data-building="2">2301</div>
-                <div class="button room" data-floor="3" data-building="2">2302</div>
-                <div class="button room" data-floor="3" data-building="2">2303</div>
-                <!-- 3号館の教室 -->
-                <div class="button room" data-floor="1" data-building="3">入り口</div>
-                <div class="button room" data-floor="1" data-building="3">入り口2</div>
-                <div class="button room" data-floor="1" data-building="3">3101</div>
-                <div class="button room" data-floor="1" data-building="3">3102</div>
-                <div class="button room" data-floor="1" data-building="3">3103</div>
-                <div class="button room" data-floor="2" data-building="3">3201</div>
-                <div class="button room" data-floor="2" data-building="3">3202</div>
-                <div class="button room" data-floor="2" data-building="3">3203</div>
-                <div class="button room" data-floor="3" data-building="3">3301</div>
-                <div class="button room" data-floor="3" data-building="3">3302</div>
-                <div class="button room" data-floor="3" data-building="3">3303</div>
+                <div class="button room" data-floor="3" data-building="1">135</div>
+                <div class="button room" data-floor="3" data-building="1">136</div>
+                <div class="button room" data-floor="3" data-building="1">137</div>
+                <div class="button room" data-floor="3" data-building="1">138</div>
+                <div class="button room" data-floor="3" data-building="1">139</div>
+                <div class="button room" data-floor="1" data-building="1">1号館1階</div>
+                <div class="button room" data-floor="2" data-building="1">1号館2階</div>
+                <div class="button room" data-floor="3" data-building="1">1号館3階</div>
+                <div class="button room" data-floor="2" data-building="2">220</div>
+                <div class="button room" data-floor="2" data-building="2">226</div>
+                <div class="button room" data-floor="3" data-building="2">230</div>
+                <div class="button room" data-floor="4" data-building="2">240</div>
+                <div class="button room" data-floor="1" data-building="2">2号館1階</div>
+                <div class="button room" data-floor="2" data-building="2">2号館2階</div>
+                <div class="button room" data-floor="3" data-building="2">2号館3階</div>
+                <div class="button room" data-floor="4" data-building="2">2号館4階</div>
+                <div class="button room" data-floor="1" data-building="3">310</div>
+                <div class="button room" data-floor="1" data-building="3">311</div>
+                <div class="button room" data-floor="2" data-building="3">320</div>
+                <div class="button room" data-floor="2" data-building="3">321</div>
+                <div class="button room" data-floor="3" data-building="3">330</div>
+                <div class="button room" data-floor="1" data-building="3">3号館1階</div>
+                <div class="button room" data-floor="2" data-building="3">3号館2階</div>
+                <div class="button room" data-floor="3" data-building="3">3号館3階</div>
+                <div class="button room" data-floor="2" data-building="4">420</div>
+                <div class="button room" data-floor="2" data-building="4">421</div>
+                <div class="button room" data-floor="2" data-building="4">422</div>
+                <div class="button room" data-floor="2" data-building="4">423</div>
+                <div class="button room" data-floor="2" data-building="4">424</div>
+                <div class="button room" data-floor="3" data-building="4">430</div>
+                <div class="button room" data-floor="3" data-building="4">431</div>
+                <div class="button room" data-floor="3" data-building="4">432</div>
+                <div class="button room" data-floor="3" data-building="4">433</div>
+                <div class="button room" data-floor="3" data-building="4">434</div>
+                <div class="button room" data-floor="4" data-building="4">440</div>
+                <div class="button room" data-floor="4" data-building="4">441</div>
+                <div class="button room" data-floor="4" data-building="4">442</div>
+                <div class="button room" data-floor="4" data-building="4">443</div>
+                <div class="button room" data-floor="4" data-building="4">444</div>
+                <div class="button room" data-floor="1" data-building="4">4号館1階</div>
+                <div class="button room" data-floor="2" data-building="4">4号館2階</div>
+                <div class="button room" data-floor="3" data-building="4">4号館3階</div>
+                <div class="button room" data-floor="4" data-building="4">4号館4階</div>
+                <div class="button room" data-floor="1" data-building="5">511</div>
+                <div class="button room" data-floor="1" data-building="5">512</div>
+                <div class="button room" data-floor="1" data-building="5">513</div>
+                <div class="button room" data-floor="1" data-building="5">514</div>
+                <div class="button room" data-floor="2" data-building="5">520</div>
+                <div class="button room" data-floor="2" data-building="5">521</div>
+                <div class="button room" data-floor="2" data-building="5">522</div>
+                <div class="button room" data-floor="2" data-building="5">523</div>
+                <div class="button room" data-floor="2" data-building="5">524</div>
+                <div class="button room" data-floor="3" data-building="5">530</div>
+                <div class="button room" data-floor="3" data-building="5">531</div>
+                <div class="button room" data-floor="3" data-building="5">532</div>
+                <div class="button room" data-floor="3" data-building="5">533</div>
+                <div class="button room" data-floor="3" data-building="5">534</div>
+                <div class="button room" data-floor="3" data-building="5">535</div>
+                <div class="button room" data-floor="3" data-building="5">536</div>
+                <div class="button room" data-floor="4" data-building="5">541</div>
+                <div class="button room" data-floor="4" data-building="5">542</div>
+                <div class="button room" data-floor="4" data-building="5">543</div>
+                <div class="button room" data-floor="4" data-building="5">544</div>
+                <div class="button room" data-floor="4" data-building="5">545</div>
+                <div class="button room" data-floor="4" data-building="5">546</div>
+                <div class="button room" data-floor="1" data-building="5">5号館1階</div>
+                <div class="button room" data-floor="2" data-building="5">5号館2階</div>
+                <div class="button room" data-floor="3" data-building="5">5号館3階</div>
+                <div class="button room" data-floor="4" data-building="5">5号館4階</div>
+                <div class="button room" data-floor="1" data-building="6">610</div>
+                <div class="button room" data-floor="1" data-building="6">611</div>
+                <div class="button room" data-floor="1" data-building="6">612</div>
+                <div class="button room" data-floor="1" data-building="6">613</div>
+                <div class="button room" data-floor="2" data-building="6">620</div>
+                <div class="button room" data-floor="2" data-building="6">621</div>
+                <div class="button room" data-floor="3" data-building="6">630</div>
+                <div class="button room" data-floor="3" data-building="6">631</div>
+                <div class="button room" data-floor="3" data-building="6">632</div>
+                <div class="button room" data-floor="3" data-building="6">633</div>
+                <div class="button room" data-floor="3" data-building="6">634</div>
+                <div class="button room" data-floor="3" data-building="6">635</div>
+                <div class="button room" data-floor="3" data-building="6">636</div>
+                <div class="button room" data-floor="4" data-building="6">640</div>
+                <div class="button room" data-floor="4" data-building="6">641</div>
+                <div class="button room" data-floor="4" data-building="6">642</div>
+                <div class="button room" data-floor="4" data-building="6">643</div>
+                <div class="button room" data-floor="4" data-building="6">644</div>
+                <div class="button room" data-floor="4" data-building="6">645</div>
+                <div class="button room" data-floor="4" data-building="6">646</div>
+                <div class="button room" data-floor="5" data-building="6">650</div>
+                <div class="button room" data-floor="5" data-building="6">651</div>
+                <div class="button room" data-floor="5" data-building="6">652</div>
+                <div class="button room" data-floor="5" data-building="6">653</div>
+                <div class="button room" data-floor="5" data-building="6">654</div>
+                <div class="button room" data-floor="5" data-building="6">655</div>
+                <div class="button room" data-floor="5" data-building="6">656</div>
+                <div class="button room" data-floor="5" data-building="6">657</div>
+                <div class="button room" data-floor="5" data-building="6">658</div>
+                <div class="button room" data-floor="5" data-building="6">659</div>
+                <div class="button room" data-floor="6" data-building="6">660</div>
+                <div class="button room" data-floor="1" data-building="6">6号館1階</div>
+                <div class="button room" data-floor="2" data-building="6">6号館2階</div>
+                <div class="button room" data-floor="3" data-building="6">6号館3階</div>
+                <div class="button room" data-floor="4" data-building="6">6号館4階</div>
+                <div class="button room" data-floor="5" data-building="6">6号館5階</div>
+                <div class="button room" data-floor="6" data-building="6">6号館6階</div>
+                <div class="button room" data-floor="1" data-building="7">711</div>
+                <div class="button room" data-floor="1" data-building="7">712</div>
+                <div class="button room" data-floor="2" data-building="7">720</div>
+                <div class="button room" data-floor="1" data-building="7">7号館1階</div>
+                <div class="button room" data-floor="2" data-building="7">7号館2階</div>
+                <div class="button room" data-floor="2" data-building="8">8-2F会議室</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F演習C</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F講義1</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F講義2</div>
+                <div class="button room" data-floor="3" data-building="8">8-3F地域研</div>
+                <div class="button room" data-floor="4" data-building="8">8-4Fﾗｳﾝｼﾞ</div>
+                <div class="button room" data-floor="5" data-building="8">8-5Fﾗｳﾝｼﾞ</div>
+                <div class="button room" data-floor="5" data-building="8">8-5F指導1</div>
+                <div class="button room" data-floor="2" data-building="8">821</div>
+                <div class="button room" data-floor="2" data-building="8">822</div>
+                <div class="button room" data-floor="2" data-building="8">823</div>
+                <div class="button room" data-floor="2" data-building="8">824</div>
+                <div class="button room" data-floor="2" data-building="8">825</div>
+                <div class="button room" data-floor="3" data-building="8">831</div>
+                <div class="button room" data-floor="4" data-building="8">841</div>
+                <div class="button room" data-floor="4" data-building="8">842</div>
+                <div class="button room" data-floor="5" data-building="8">851</div>
+                <div class="button room" data-floor="1" data-building="8">8号館1階</div>
+                <div class="button room" data-floor="2" data-building="8">8号館2階</div>
+                <div class="button room" data-floor="3" data-building="8">8号館3階</div>
+                <div class="button room" data-floor="4" data-building="8">8号館4階</div>
+                <div class="button room" data-floor="5" data-building="8">8号館5階</div>
+                <div class="button room" data-floor="1" data-building="9">911</div>
+                <div class="button room" data-floor="1" data-building="9">912</div>
+                <div class="button room" data-floor="2" data-building="9">921</div>
+                <div class="button room" data-floor="2" data-building="9">922</div>
+                <div class="button room" data-floor="3" data-building="9">930</div>
+                <div class="button room" data-floor="1" data-building="9">9号館1階</div>
+                <div class="button room" data-floor="2" data-building="9">9号館2階</div>
+                <div class="button room" data-floor="3" data-building="9">9号館3階</div>
+                <div class="button room" data-floor="2" data-building="10">1021</div>
+                <div class="button room" data-floor="2" data-building="10">1022</div>
+                <div class="button room" data-floor="3" data-building="10">1031</div>
+                <div class="button room" data-floor="3" data-building="10">1032</div>
+                <div class="button room" data-floor="4" data-building="10">1040</div>
+                <div class="button room" data-floor="4" data-building="10">1041</div>
+                <div class="button room" data-floor="4" data-building="10">1042</div>
+                <div class="button room" data-floor="5" data-building="10">1050</div>
+                <div class="button room" data-floor="5" data-building="10">1051</div>
+                <div class="button room" data-floor="5" data-building="10">1052</div>
+                <div class="button room" data-floor="1" data-building="10">10号館1階</div>
+                <div class="button room" data-floor="2" data-building="10">10号館2階</div>
+                <div class="button room" data-floor="3" data-building="10">10号館3階</div>
+                <div class="button room" data-floor="4" data-building="10">10号館4階</div>
+                <div class="button room" data-floor="5" data-building="10">10号館5階</div>
+                <div class="button room" data-floor="1" data-building="11">11号館1階</div>
+                <div class="button room" data-floor="1" data-building="12">12号館1階</div>
+                <div class="button room" data-floor="1" data-building="13">13号館1階</div>
+                <div class="button room" data-floor="1" data-building="14">14号館1階</div>
+                <div class="button room" data-floor="1" data-building="15">15号館1階</div>
+                <div class="button room" data-floor="1" data-building="16">16号館1階</div>
+                <div class="button room" data-floor="1" data-building="17">17号館1階</div>
 
 
+                <div class="button room" data-floor="1" data-building="18">体育館1F</div>
+                <div class="button room" data-floor="2" data-building="18">体育館2F</div>
+                <div class="button room" data-floor="3" data-building="18">体育館3F</div>
+                <div class="button room" data-floor="1" data-building="19">19号館1階</div>
+
+                <div class="button room" data-floor="1" data-building="20">チャペル</div>
+
+
+
+                <!-- ここまで、GASのHTMLコピペ -->
 
 
 

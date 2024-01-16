@@ -26,16 +26,55 @@ body {
     background-color: #45a049;
 }
 
+/* ヘッダーのスタイル */
+.button-container-header h2 {
+
+    font-size: 24px;
+    /* 大きめのフォントサイズに */
+    font-weight: bold;
+    /* テキストを太字に */
+    margin: 0 0 20px 0;
+    /* ヘッダーとボタンの間に余白を設定 */
+    text-align: center;
+    /* テキストを中央揃えに */
+    width: 100%;
+    /* ヘッダーの幅を100%に */
+}
+
+/* ボタンコンテナのスタイル */
 .button-container {
+    flex: 0 0 auto;
+    /* ボタンのサイズを固定値にする */
+    width: 450px;
+    /* ボタンの幅を120pxに設定 */
+
     display: none;
     /* 初期状態では非表示 */
-    flex-direction: column;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
     align-items: center;
+    /* 中央揃え */
+
+    justify-content: flex-start;
+    /* ボタンを左端から並べる */
+
+    gap: 10px;
+    /* ボタンの間隔 */
+    padding: 10px;
+    /* コンテナの内側の余白 */
+
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+
+
+
+/* アクティブ時のスタイル */
 .button-container.active {
     display: flex;
     /* アクティブ時に表示 */
